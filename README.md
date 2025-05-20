@@ -1,106 +1,93 @@
-# CRIS-Project
+# 📊 CRIS Metro Booking & Sales Analysis Dashboard
 
-Overview
-This Power BI report visualizes metro booking and sales data from CRIS, offering insights into token sales, terminal performance, cash flow, and zone-wise distributions. The goal is to support operational decisions by highlighting patterns in sales, booking behaviors, and financial inputs across terminals and time.
+A Power BI dashboard developed using real metro sales and booking data from the Centre for Railway Information Systems (CRIS). This project visualizes transaction behaviors, zone-wise token distributions, and terminal-wise cash trends to enable data-driven operational insights.
 
-⚙️ Tools Used
-Power BI Desktop
+---
 
-Oracle SQL Server (Data Source)
+## 📁 Project Overview
 
-DAX (Data Analysis Expressions)
+This interactive report covers:
+- Booking trends and forecasting
+- Token sale peaks across June
+- Terminal performance (cash influx, security deposits)
+- Shift-wise transaction summaries
+- Zone-wise token distribution
 
-🧠 Problem Statement
-To analyze metro booking and sales data over a span of one month, focusing on identifying:
+---
 
-Dates and zones with peak token sales
+## ⚙️ Tools & Technologies
+- **Power BI Desktop**
+- **Oracle SQL Server** (Data Source)
+- **Microsoft Excel** (Pre-processing)
+- **DAX** (for measures & calculated columns)
 
-Terminal-wise cash influx and deposits
+---
 
-Temporal patterns in bookings
+## 🧠 Problem Statement
 
-Forecasting potential trends
+Analyze CRIS metro sales and booking data to:
+- Identify high-performing zones and terminals
+- Forecast future booking behavior
+- Understand inflow and deposit distributions
+- Monitor operational shifts and total net influx
 
-📁 Dataset
-The dataset consists of:
+---
 
-Booking timestamps
+## 📊 Dashboard Highlights
 
-Token sales
+### 📄 **Page 1: Booking and Token Overview**
 
-Zone and terminal identifiers
+![image](https://github.com/user-attachments/assets/ba88605f-0426-4b7c-95f3-f67b48696e07)
 
-Cash inflow and deposit records
+- **KPI Cards**:  
+  - `Net Booking Sales`: ₹2.38L  
+  - `Net Token Sales`: ₹91.51K  
 
-📌 Dashboard Walkthrough
-📄 Page 1: Overall Sales Summary
-KPI Cards:
+- **Area Charts**:  
+  Embedded within KPI cards for mini-trends
 
-Net Booking Sales (238.38K)
+- **Shift-Wise Transaction Matrix**:  
+  Location-wise sales across three shift slots
 
-Net Token Sales (91.51K)
-These provide at-a-glance metrics on financial activity.
+- **Forecast Line Chart**:  
+  - Title: *Booking Trend with Future Analysis*  
+  - Highlights booking momentum and prediction over time
 
-Area Charts (with mini trend lines):
-Used for both KPIs to give visual cues about volatility and trends.
+---
 
-Table – Shift-Wise Transactions:
-Displays location-wise transaction distribution across three operational shifts.
+### 📄 **Page 2: Terminal & Zone Analytics**
 
-Line Chart with Forecasting:
+![image](https://github.com/user-attachments/assets/d6118b10-c78e-4100-a32d-70e1d593b8fb)
 
-Title: Booking Trend with Future Analysis
+- **Bar Chart** – *Dates with Highest Token Sales*  
+  Helps spot booking surges and date-specific peaks.
 
-Visual Choice: Area chart with trend line
+- **Stacked Column Chart** – *Zone-Wise Sales*  
+  Compares ZONE1–ZONE6 over daily intervals.
 
-Why: Emphasizes subtle fluctuations while highlighting increasing trends with a dotted line regression. Supports forecasting by providing temporal momentum insights.
+- **Pie Charts** – *Terminal-Wise Insights*  
+  - **Cash Influx**:  
+    - KBEL02 (₹2.46M - 43.37%)  
+    - KBEL03 (₹2.29M - 40.39%)  
+    - KBEL81 (₹0.92M - 16.2%)  
+  - **Security Deposit**:  
+    - KBEL99 (₹4.14K - 57.66%)  
+    - KBEL02 (₹1.72K - 23.96%)  
+    - KBEL03 (₹1.32K - 18.38%)
 
-📄 Page 2: Deeper Breakdown
-Bar Chart – Dates with Highest Token Sales
+---
 
-Vertical green bars show daily token performance.
+## 📈 Key Takeaways
+- **KBEL02** contributed the highest to cash influx, with **43.37% share**
+- **KBEL99** led in security deposits at **57.66%**
+- **ZONE3** had the highest ticketing activity overall
+- Forecast model indicates an **upward trend in bookings**
 
-Why: Simple and effective for identifying peaks and comparing sales across time.
+### 📁 Files
 
-Pie Charts – Terminal-Wise Cash Influx & Security Deposits
+- ``: Contains the full Power BI report with visuals and data summary
 
-Cash Influx: Shows contribution of each terminal, with clear percentage split.
+> 💡 Tools Used: Power BI, Oracle SQL Server, Excel
 
-Security Deposits: Reflects terminal-specific deposit behaviors.
 
-Why: Pie charts work here because the categories are few and the proportion-based insights are key.
-
-Stacked Column Chart – Zone-Wise Sales
-
-Each bar is segmented by ZONE color (ZONE1–ZONE6).
-
-Why: Offers a compact way to compare zone performance over dates while revealing volume distributions.
-
-🎯 Visual Justification & Effectiveness
-Visual Type	Justification	Effectiveness
-KPI Cards + Trend	Clean snapshot with subtle visual context	Instant metric tracking; trend inclusion adds foresight
-Forecasted Line Chart	Adds predictive layer to booking behavior	Guides planning by identifying upward/downward momentum
-Stacked Bars	Captures multi-zone sales in one glance	Allows both cumulative and individual zone analysis
-Pie Charts	Best for small categorical comparisons (terminals)	Easy to understand contribution split, especially with % labels
-Tabular Matrix	Necessary for shift-level detail	Complements visuals with precise numbers
-
-📈 Key Insights
-KBEL02 and KBEL99 were the highest-performing terminals in terms of cash influx.
-
-Bookings exhibited a steady upward trend, suggesting growth or seasonality.
-
-Zone 3 consistently contributed the highest to overall token sales.
-
-Security deposits were most frequent through KBEL99, highlighting reliable terminal usage.
-
-🔄 How to Use
-Open cris_project.pbix in Power BI Desktop.
-
-Refresh the dataset if connected to the live Oracle SQL Server.
-
-Interact with visuals using slicers and filters for custom insights.
-
-🙌 Credits
-Created by Preasha Ghoshal
-Internship Project at Centre for Railway Information Systems (CRIS)
-Tools: Power BI, Oracle SQL Server, Microsoft Excel
+---
