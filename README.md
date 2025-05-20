@@ -85,7 +85,7 @@ Analyze CRIS metro sales and booking data to:
 
 ### 📁 Files
 
-📄 [View Full Power BI Report (PDF)](Cris%20Project.pdf)
+📄 [View Full Power BI Report (PDF)](CRIS%20Project.pdf)
 `: Contains the full Power BI report with visuals and data summary
 
 > 💡 Tools Used: Power BI, Oracle SQL Server, Excel
